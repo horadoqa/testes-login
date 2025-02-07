@@ -1,692 +1,686 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-02-07T08:25:21.189117" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-02-07T09:09:30.740649" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="/home/rfahham/projetos/testes-login/testes/automatizados/login.robot">
 <kw name="Open Browser To Login Page" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:21.322015" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:09:30.870087" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:25:21.321781" elapsed="2.223306"/>
+<status status="PASS" start="2025-02-07T09:09:30.869873" elapsed="2.232478"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:25:28.546034" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:09:38.103463" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:23.545425" elapsed="5.000955"/>
+<status status="PASS" start="2025-02-07T09:09:33.102643" elapsed="5.001369"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:25:28.546834" elapsed="0.003336"/>
+<status status="PASS" start="2025-02-07T09:09:38.104825" elapsed="0.005307"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:21.321058" elapsed="7.229466"/>
+<status status="PASS" start="2025-02-07T09:09:30.869147" elapsed="7.241498"/>
 </kw>
-<test id="s1-t1" name="Caso de Teste 1: Acesso à página de login" line="69">
+<test id="s1-t1" name="Caso de Teste 1: Acesso à página de login" line="70">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:28.553672" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:09:38.114864" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:25:28.553104" elapsed="0.932307"/>
+<status status="PASS" start="2025-02-07T09:09:38.114269" elapsed="0.949793"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:25:34.486018" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:09:46.422051" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:29.485697" elapsed="5.000610"/>
+<status status="PASS" start="2025-02-07T09:09:39.064480" elapsed="7.357719"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:25:34.486758" elapsed="0.004990"/>
+<status status="PASS" start="2025-02-07T09:09:46.422493" elapsed="0.002696"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:28.552306" elapsed="5.939730"/>
+<status status="PASS" start="2025-02-07T09:09:38.113300" elapsed="8.312018"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:34.512239" level="INFO">Current page contains element 'id=username'.</msg>
+<msg time="2025-02-07T09:09:46.442016" level="INFO">Current page contains element 'id=username'.</msg>
 <arg>id=username</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:25:34.492470" elapsed="0.019925"/>
+<status status="PASS" start="2025-02-07T09:09:46.425539" elapsed="0.016623"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:34.524204" level="INFO">Current page contains element 'id=password'.</msg>
+<msg time="2025-02-07T09:09:46.454832" level="INFO">Current page contains element 'id=password'.</msg>
 <arg>id=password</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:25:34.512749" elapsed="0.011574"/>
+<status status="PASS" start="2025-02-07T09:09:46.442529" elapsed="0.012415"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:34.536649" level="INFO">Current page contains element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:09:46.466951" level="INFO">Current page contains element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:25:34.524582" elapsed="0.012180"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:25:39.537552" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:34.537009" elapsed="5.000772"/>
+<status status="PASS" start="2025-02-07T09:09:46.455224" elapsed="0.011838"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:25:39.538627" elapsed="0.060698"/>
+<status status="PASS" start="2025-02-07T09:09:46.467444" elapsed="0.061500"/>
 </kw>
 <doc>Verifica se a página de login carrega corretamente.</doc>
 <tag>1</tag>
-<status status="PASS" start="2025-02-07T08:25:28.550795" elapsed="11.048743"/>
+<status status="PASS" start="2025-02-07T09:09:38.111088" elapsed="8.418406"/>
 </test>
 <test id="s1-t2" name="Caso de Teste 2: Login com credenciais válidas" line="79">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:39.600994" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:09:46.532115" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:25:39.600763" elapsed="0.934841"/>
+<status status="PASS" start="2025-02-07T09:09:46.531769" elapsed="0.909529"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:25:47.761082" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:09:52.442210" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:40.536038" elapsed="7.225358"/>
+<status status="PASS" start="2025-02-07T09:09:47.441689" elapsed="5.000683"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:25:47.761916" elapsed="0.005993"/>
+<status status="PASS" start="2025-02-07T09:09:52.442621" elapsed="0.003438"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:39.600466" elapsed="8.167799"/>
+<status status="PASS" start="2025-02-07T09:09:46.531262" elapsed="5.915032"/>
 </kw>
 <kw name="Input Email And Password Valid">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:47.773530" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2025-02-07T09:09:52.448159" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
 <arg>${USERNAME_ID}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:47.771812" elapsed="0.126310"/>
+<status status="PASS" start="2025-02-07T09:09:52.447624" elapsed="0.147229"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:47.898781" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-07T09:09:52.596137" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
 <arg>${PASSWPRD_ID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:47.898332" elapsed="0.112959"/>
+<status status="PASS" start="2025-02-07T09:09:52.595343" elapsed="0.114457"/>
 </kw>
 <arg>${VALID_EMAIL}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-02-07T08:25:47.768982" elapsed="0.242591"/>
+<status status="PASS" start="2025-02-07T09:09:52.446808" elapsed="0.263173"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:48.012708" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:09:52.711362" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:48.012451" elapsed="0.301733"/>
+<status status="PASS" start="2025-02-07T09:09:52.711021" elapsed="0.446584"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:48.012025" elapsed="0.302413"/>
+<status status="PASS" start="2025-02-07T09:09:52.710350" elapsed="0.447393"/>
 </kw>
 <kw name="Verify Redirect">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:48.350329" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
+<msg time="2025-02-07T09:09:53.175874" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
 <arg>//*[@id="inicio"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:25:48.315400" elapsed="0.035188"/>
+<status status="PASS" start="2025-02-07T09:09:53.158464" elapsed="0.017594"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:48.314911" elapsed="0.036205"/>
+<status status="PASS" start="2025-02-07T09:09:53.158072" elapsed="0.018141"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:25:48.351769" elapsed="0.062225"/>
+<status status="PASS" start="2025-02-07T09:09:53.176736" elapsed="0.071534"/>
 </kw>
 <doc>Testa o login com credenciais válidas.</doc>
 <tag>2</tag>
-<status status="PASS" start="2025-02-07T08:25:39.599932" elapsed="8.814234"/>
+<status status="PASS" start="2025-02-07T09:09:46.530577" elapsed="6.717996"/>
 </test>
 <test id="s1-t3" name="Caso de Teste 3: Login com credenciais inválidas" line="88">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:48.415647" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:09:53.268373" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:25:48.415422" elapsed="0.882422"/>
+<status status="PASS" start="2025-02-07T09:09:53.250515" elapsed="1.059993"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:25:54.298931" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:09:59.311648" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:49.298070" elapsed="5.001569"/>
+<status status="PASS" start="2025-02-07T09:09:54.310976" elapsed="5.001156"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.300618" elapsed="0.008825"/>
+<status status="PASS" start="2025-02-07T09:09:59.313032" elapsed="0.009170"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:48.415007" elapsed="5.895104"/>
+<status status="PASS" start="2025-02-07T09:09:53.250036" elapsed="6.072708"/>
 </kw>
 <kw name="Input Email And Password Invalid">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:54.312876" level="INFO">Typing text 'invalido@dominio.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2025-02-07T09:09:59.326660" level="INFO">Typing text 'invalido@dominio.com' into text field '//*[@id="username"]'.</msg>
 <arg>${USERNAME_ID}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.312165" elapsed="0.132518"/>
+<status status="PASS" start="2025-02-07T09:09:59.325669" elapsed="0.136095"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:54.445221" level="INFO">Typing text 'SenhaErrada123' into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-07T09:09:59.462245" level="INFO">Typing text 'SenhaErrada123' into text field '//*[@id="password"]'.</msg>
 <arg>${PASSWPRD_ID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.444898" elapsed="0.116060"/>
+<status status="PASS" start="2025-02-07T09:09:59.461968" elapsed="0.117941"/>
 </kw>
 <arg>${INVALID_EMAIL}</arg>
 <arg>${INVALID_PASSWORD}</arg>
-<status status="PASS" start="2025-02-07T08:25:54.311033" elapsed="0.250067"/>
+<status status="PASS" start="2025-02-07T09:09:59.323893" elapsed="0.256163"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:54.561923" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:09:59.580864" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.561692" elapsed="0.097722"/>
+<status status="PASS" start="2025-02-07T09:09:59.580674" elapsed="0.093145"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:54.561357" elapsed="0.098201"/>
+<status status="PASS" start="2025-02-07T09:09:59.580340" elapsed="0.093624"/>
 </kw>
 <kw name="Verify Message Error">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ERROR_MESSAGE}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.660197" elapsed="0.028908"/>
+<status status="PASS" start="2025-02-07T09:09:59.674535" elapsed="0.029203"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:54.716605" level="INFO">${ERROR_MESSAGE} = E-mail ou senha inválidos! Tentativas restantes: 4</msg>
+<msg time="2025-02-07T09:09:59.732545" level="INFO">${ERROR_MESSAGE} = E-mail ou senha inválidos! Tentativas restantes: 4</msg>
 <var>${ERROR_MESSAGE}</var>
 <arg>${ERROR_MESSAGE}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.689417" elapsed="0.027243"/>
+<status status="PASS" start="2025-02-07T09:09:59.704039" elapsed="0.028595"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${ERROR_MESSAGE}</arg>
 <arg>${EMAIL_PASSWORD_INVALID}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.716867" elapsed="0.000276"/>
+<status status="PASS" start="2025-02-07T09:09:59.732882" elapsed="0.000284"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:54.659903" elapsed="0.057365"/>
+<status status="PASS" start="2025-02-07T09:09:59.674241" elapsed="0.059123"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.717592" elapsed="0.064951"/>
+<status status="PASS" start="2025-02-07T09:09:59.733777" elapsed="0.062067"/>
 </kw>
 <doc>Testa o login com credenciais inválidas.</doc>
 <tag>3</tag>
-<status status="PASS" start="2025-02-07T08:25:48.414535" elapsed="6.368269"/>
+<status status="PASS" start="2025-02-07T09:09:53.249226" elapsed="6.546888"/>
 </test>
-<test id="s1-t4" name="Caso de Teste 4: Campo de &quot;usuário&quot; vazio" line="97">
+<test id="s1-t4" name="Caso de Teste 4: Campo de &quot;E-mail&quot; vazio" line="97">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:25:54.785420" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:09:59.798055" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:25:54.785094" elapsed="0.929044"/>
+<status status="PASS" start="2025-02-07T09:09:59.797747" elapsed="0.920011"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:00.715123" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:05.718823" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:25:55.714454" elapsed="5.001201"/>
+<status status="PASS" start="2025-02-07T09:10:00.718122" elapsed="5.000994"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:00.716418" elapsed="0.009470"/>
+<status status="PASS" start="2025-02-07T09:10:05.719587" elapsed="0.005110"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:54.784509" elapsed="5.941895"/>
+<status status="PASS" start="2025-02-07T09:09:59.797307" elapsed="5.927694"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:00.728365" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
+<msg time="2025-02-07T09:10:05.725997" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:00.727302" elapsed="0.129937"/>
+<status status="PASS" start="2025-02-07T09:10:05.725452" elapsed="0.152179"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:00.858194" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:05.878598" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:00.857974" elapsed="0.089389"/>
+<status status="PASS" start="2025-02-07T09:10:05.878371" elapsed="0.084056"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:00.857622" elapsed="0.089889"/>
+<status status="PASS" start="2025-02-07T09:10:05.877994" elapsed="0.084597"/>
 </kw>
 <kw name="Wait Until Error Message Is Visible">
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>//*[@id="error-message"]</arg>
 <arg>${message}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-02-07T08:26:00.948198" elapsed="0.030735"/>
+<status status="PASS" start="2025-02-07T09:10:05.963196" elapsed="0.028490"/>
 </kw>
 <arg>${EMAIL_PASSWORD_MANDATORY}</arg>
-<status status="PASS" start="2025-02-07T08:26:00.947821" elapsed="0.031350"/>
+<status status="PASS" start="2025-02-07T09:10:05.962835" elapsed="0.029034"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:00.979831" elapsed="0.061682"/>
+<status status="PASS" start="2025-02-07T09:10:05.992224" elapsed="0.064149"/>
 </kw>
 <doc>Verifica se o sistema impede o envio com o campo de "usuário" vazio.</doc>
 <tag>4</tag>
-<status status="PASS" start="2025-02-07T08:25:54.783530" elapsed="6.258198"/>
+<status status="PASS" start="2025-02-07T09:09:59.796682" elapsed="6.259950"/>
 </test>
 <test id="s1-t5" name="Caso de Teste 5: Campo de &quot;senha&quot; vazio" line="106">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:01.044210" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:06.059319" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:01.043980" elapsed="0.899263"/>
+<status status="PASS" start="2025-02-07T09:10:06.058313" elapsed="0.964252"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:06.944128" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:12.023681" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:01.943488" elapsed="5.001170"/>
+<status status="PASS" start="2025-02-07T09:10:07.022804" elapsed="5.001945"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:06.945508" elapsed="0.009294"/>
+<status status="PASS" start="2025-02-07T09:10:12.026063" elapsed="0.013398"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:01.043384" elapsed="5.911963"/>
+<status status="PASS" start="2025-02-07T09:10:06.057739" elapsed="5.982346"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:06.956718" level="INFO">Typing text 'usuario@example.com' into text field 'id=username'.</msg>
+<msg time="2025-02-07T09:10:12.042751" level="INFO">Typing text 'usuario@example.com' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:06.955948" elapsed="0.126815"/>
+<status status="PASS" start="2025-02-07T09:10:12.041378" elapsed="0.143982"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:07.083618" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:12.186213" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:07.083426" elapsed="0.100554"/>
+<status status="PASS" start="2025-02-07T09:10:12.185977" elapsed="0.093547"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:07.083123" elapsed="0.100996"/>
+<status status="PASS" start="2025-02-07T09:10:12.185686" elapsed="0.094017"/>
 </kw>
 <kw name="Wait Until Error Message Is Visible">
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>//*[@id="error-message"]</arg>
 <arg>${message}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-02-07T08:26:07.184719" elapsed="0.033126"/>
+<status status="PASS" start="2025-02-07T09:10:12.280653" elapsed="0.031739"/>
 </kw>
 <arg>${EMAIL_PASSWORD_MANDATORY}</arg>
-<status status="PASS" start="2025-02-07T08:26:07.184388" elapsed="0.033709"/>
+<status status="PASS" start="2025-02-07T09:10:12.280079" elapsed="0.032568"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:07.218645" elapsed="0.061068"/>
+<status status="PASS" start="2025-02-07T09:10:12.313325" elapsed="0.064641"/>
 </kw>
 <doc>Verifica se o sistema impede o envio com o campo de "senha" vazio.</doc>
 <tag>5</tag>
-<status status="PASS" start="2025-02-07T08:26:01.042234" elapsed="6.237711"/>
+<status status="PASS" start="2025-02-07T09:10:06.057092" elapsed="6.321064"/>
 </test>
-<test id="s1-t6" name="Caso de Teste 6: Campos de login com espaços em branco" line="116">
+<test id="s1-t6" name="Caso de Teste 6: Campos de login com espaços em branco" line="115">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:07.282227" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:12.379829" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:07.281838" elapsed="0.938463"/>
+<status status="PASS" start="2025-02-07T09:10:12.379424" elapsed="1.051577"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:13.221390" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:18.431851" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:08.220684" elapsed="5.001171"/>
+<status status="PASS" start="2025-02-07T09:10:13.431250" elapsed="5.001105"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.222596" elapsed="0.010468"/>
+<status status="PASS" start="2025-02-07T09:10:18.433117" elapsed="0.010393"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:07.281354" elapsed="5.952278"/>
+<status status="PASS" start="2025-02-07T09:10:12.379094" elapsed="6.064940"/>
 </kw>
 <kw name="Input Email And Password Invalid Space">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:13.237685" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2025-02-07T09:10:18.448167" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
 <arg>${USERNAME_ID}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.236574" elapsed="0.132645"/>
+<status status="PASS" start="2025-02-07T09:10:18.447130" elapsed="0.136216"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:13.369901" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-07T09:10:18.583841" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
 <arg>${PASSWPRD_ID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.369516" elapsed="0.111687"/>
+<status status="PASS" start="2025-02-07T09:10:18.583561" elapsed="3.040013"/>
 </kw>
 <arg>${VALID_EMAIL_SPACE}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-02-07T08:26:13.234877" elapsed="0.246593"/>
+<status status="PASS" start="2025-02-07T09:10:18.445188" elapsed="3.178552"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:13.483872" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:21.625468" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.483564" elapsed="0.157737"/>
+<status status="PASS" start="2025-02-07T09:10:21.624900" elapsed="0.231329"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:13.482637" elapsed="0.158823"/>
+<status status="PASS" start="2025-02-07T09:10:21.624079" elapsed="0.232287"/>
 </kw>
 <kw name="Verify Redirect">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:13.662012" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
+<msg time="2025-02-07T09:10:21.872687" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
 <arg>//*[@id="inicio"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.642948" elapsed="0.019235"/>
+<status status="PASS" start="2025-02-07T09:10:21.856959" elapsed="0.015841"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:13.641881" elapsed="0.020432"/>
+<status status="PASS" start="2025-02-07T09:10:21.856631" elapsed="0.016315"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.662822" elapsed="0.060205"/>
+<status status="PASS" start="2025-02-07T09:10:21.873276" elapsed="0.060494"/>
 </kw>
 <doc>Verifica se o sistema lida corretamente com espaços em branco nos campos.</doc>
 <tag>6</tag>
-<status status="PASS" start="2025-02-07T08:26:07.280645" elapsed="6.442609"/>
+<status status="PASS" start="2025-02-07T09:10:12.378562" elapsed="9.555392"/>
 </test>
-<test id="s1-t7" name="Caso de Teste 7: Exibição de senha" line="126">
+<test id="s1-t7" name="Caso de Teste 7: Exibição de senha" line="124">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:13.724775" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:21.935427" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:13.724545" elapsed="0.900755"/>
+<status status="PASS" start="2025-02-07T09:10:21.935183" elapsed="0.876770"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:19.626182" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:27.812852" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:14.625573" elapsed="5.000853"/>
+<status status="PASS" start="2025-02-07T09:10:22.812238" elapsed="5.001057"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.626870" elapsed="0.004535"/>
+<status status="PASS" start="2025-02-07T09:10:27.814190" elapsed="0.009059"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:13.724183" elapsed="5.907434"/>
+<status status="PASS" start="2025-02-07T09:10:21.934818" elapsed="5.889102"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:19.632410" level="INFO">Typing text 'usuario@example.com' into text field 'id=username'.</msg>
+<msg time="2025-02-07T09:10:27.826106" level="INFO">Typing text 'usuario@example.com' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.631975" elapsed="0.120810"/>
+<status status="PASS" start="2025-02-07T09:10:27.824842" elapsed="0.137561"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:19.753392" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
+<msg time="2025-02-07T09:10:27.963207" level="INFO">Typing text '1q2w3e4r' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.753087" elapsed="0.118376"/>
+<status status="PASS" start="2025-02-07T09:10:27.962768" elapsed="0.105807"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=toggle-password</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.871809" elapsed="0.031246"/>
+<status status="PASS" start="2025-02-07T09:10:28.068964" elapsed="0.028741"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:19.903709" level="INFO">Clicking element 'id=toggle-password'.</msg>
+<msg time="2025-02-07T09:10:28.098631" level="INFO">Clicking element 'id=toggle-password'.</msg>
 <arg>id=toggle-password</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.903452" elapsed="0.081398"/>
+<status status="PASS" start="2025-02-07T09:10:28.098230" elapsed="0.086349"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=toggle-password</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-07T08:26:19.985228" elapsed="2.963590"/>
+<status status="PASS" start="2025-02-07T09:10:28.184899" elapsed="0.021411"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:22.949364" level="INFO">Clicking element 'id=toggle-password'.</msg>
+<msg time="2025-02-07T09:10:28.207117" level="INFO">Clicking element 'id=toggle-password'.</msg>
 <arg>id=toggle-password</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:22.949120" elapsed="0.086382"/>
+<status status="PASS" start="2025-02-07T09:10:28.206750" elapsed="0.085061"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=toggle-password</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-07T08:26:23.036229" elapsed="0.023895"/>
+<status status="PASS" start="2025-02-07T09:10:28.292209" elapsed="0.020754"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:23.061131" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:28.313925" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:23.060928" elapsed="0.331076"/>
+<status status="PASS" start="2025-02-07T09:10:28.313698" elapsed="0.149154"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:23.060597" elapsed="0.331684"/>
+<status status="PASS" start="2025-02-07T09:10:28.313366" elapsed="0.149763"/>
 </kw>
 <kw name="Verify Redirect">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:23.409946" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
+<msg time="2025-02-07T09:10:28.480871" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
 <arg>//*[@id="inicio"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:26:23.393350" elapsed="0.016745"/>
+<status status="PASS" start="2025-02-07T09:10:28.464162" elapsed="0.016856"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:23.392727" elapsed="0.017527"/>
+<status status="PASS" start="2025-02-07T09:10:28.463659" elapsed="0.017537"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:23.410619" elapsed="0.060730"/>
+<status status="PASS" start="2025-02-07T09:10:28.481598" elapsed="0.061324"/>
 </kw>
 <doc>Verifica a funcionalidade de "exibir senha".</doc>
 <tag>7</tag>
-<status status="PASS" start="2025-02-07T08:26:13.723690" elapsed="9.747860"/>
+<status status="PASS" start="2025-02-07T09:10:21.934317" elapsed="6.608818"/>
 </test>
-<test id="s1-t8" name="Caso de Teste 8: Redirecionamento após login" line="141">
+<test id="s1-t8" name="Caso de Teste 8: Redirecionamento após login" line="139">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:23.473166" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:28.544976" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:23.472792" elapsed="0.896905"/>
+<status status="PASS" start="2025-02-07T09:10:28.544603" elapsed="0.961418"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:29.370502" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:34.507192" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:24.369983" elapsed="5.000896"/>
+<status status="PASS" start="2025-02-07T09:10:29.506232" elapsed="5.001439"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:29.371389" elapsed="0.006152"/>
+<status status="PASS" start="2025-02-07T09:10:34.508486" elapsed="0.009105"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:23.472497" elapsed="5.905414"/>
+<status status="PASS" start="2025-02-07T09:10:28.544312" elapsed="5.973765"/>
 </kw>
 <kw name="Input Email And Password Valid">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:29.380436" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2025-02-07T09:10:34.521695" level="INFO">Typing text 'usuario@example.com' into text field '//*[@id="username"]'.</msg>
 <arg>${USERNAME_ID}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:29.379735" elapsed="0.136203"/>
+<status status="PASS" start="2025-02-07T09:10:34.520709" elapsed="0.131876"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:29.516425" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-07T09:10:34.653285" level="INFO">Typing text '1q2w3e4r' into text field '//*[@id="password"]'.</msg>
 <arg>${PASSWPRD_ID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:29.516146" elapsed="0.118897"/>
+<status status="PASS" start="2025-02-07T09:10:34.652886" elapsed="0.108164"/>
 </kw>
 <arg>${VALID_EMAIL}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-02-07T08:26:29.378612" elapsed="0.256620"/>
+<status status="PASS" start="2025-02-07T09:10:34.519120" elapsed="0.242124"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:29.636179" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:34.762103" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:29.635887" elapsed="0.159514"/>
+<status status="PASS" start="2025-02-07T09:10:34.761880" elapsed="0.161099"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:29.635557" elapsed="0.160062"/>
+<status status="PASS" start="2025-02-07T09:10:34.761574" elapsed="0.161842"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:30.796630" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-07T09:10:35.924778" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:29.795897" elapsed="1.001316"/>
+<status status="PASS" start="2025-02-07T09:10:34.923938" elapsed="1.001307"/>
 </kw>
 <kw name="Verify Redirect">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:30.828320" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
+<msg time="2025-02-07T09:10:35.956279" level="INFO">Current page contains element '//*[@id="inicio"]'.</msg>
 <arg>//*[@id="inicio"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-07T08:26:30.799584" elapsed="0.028876"/>
+<status status="PASS" start="2025-02-07T09:10:35.927825" elapsed="0.028602"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:30.798387" elapsed="0.030253"/>
+<status status="PASS" start="2025-02-07T09:10:35.926606" elapsed="0.029985"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:30.829021" elapsed="0.061645"/>
+<status status="PASS" start="2025-02-07T09:10:35.957012" elapsed="0.061574"/>
 </kw>
 <doc>Verifica se o sistema redireciona corretamente após o login.</doc>
 <tag>8</tag>
-<status status="PASS" start="2025-02-07T08:26:23.471969" elapsed="7.418871"/>
+<status status="PASS" start="2025-02-07T09:10:28.543707" elapsed="7.475094"/>
 </test>
-<test id="s1-t9" name="Caso de Teste 9: Comportamento do botão &quot;entrar&quot;" line="151">
+<test id="s1-t9" name="Caso de Teste 9: Comportamento do botão &quot;entrar&quot;" line="149">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:30.892449" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:36.020753" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:30.892113" elapsed="0.917519"/>
+<status status="PASS" start="2025-02-07T09:10:36.020431" elapsed="0.904724"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:36.810376" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:41.925741" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:31.809859" elapsed="5.000870"/>
+<status status="PASS" start="2025-02-07T09:10:36.925393" elapsed="5.000557"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:36.811106" elapsed="0.004722"/>
+<status status="PASS" start="2025-02-07T09:10:41.926157" elapsed="0.002067"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:30.891807" elapsed="5.924229"/>
+<status status="PASS" start="2025-02-07T09:10:36.019996" elapsed="5.908354"/>
 </kw>
 <kw name="Verify Login Button Disabled">
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:36.847881" level="INFO">${attribute} = true</msg>
+<msg time="2025-02-07T09:10:41.953846" level="INFO">${attribute} = true</msg>
 <var>${attribute}</var>
 <arg>id=login-button</arg>
 <arg>disabled</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:36.817056" elapsed="0.030906"/>
+<status status="PASS" start="2025-02-07T09:10:41.928921" elapsed="0.024978"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-02-07T08:26:36.848529" level="INFO">Length is 4.</msg>
+<msg time="2025-02-07T09:10:41.954269" level="INFO">Length is 4.</msg>
 <arg>${attribute}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-02-07T08:26:36.848242" elapsed="0.000374"/>
+<status status="PASS" start="2025-02-07T09:10:41.954083" elapsed="0.000240"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:36.816553" elapsed="0.032189"/>
+<status status="PASS" start="2025-02-07T09:10:41.928608" elapsed="0.025799"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:36.849100" elapsed="0.059392"/>
+<status status="PASS" start="2025-02-07T09:10:41.954723" elapsed="0.060826"/>
 </kw>
 <doc>Verifica se o botão "entrar" fica desabilitado com campos vazios.</doc>
 <tag>9</tag>
-<status status="PASS" start="2025-02-07T08:26:30.891222" elapsed="6.017507"/>
+<status status="PASS" start="2025-02-07T09:10:36.019273" elapsed="5.996537"/>
 </test>
-<test id="s1-t10" name="Caso de Teste 10: Mensagens de erro" line="158">
+<test id="s1-t10" name="Caso de Teste 10: Mensagens de erro" line="156">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:36.911206" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
+<msg time="2025-02-07T09:10:42.017363" level="INFO">Opening browser 'Chrome' to base url 'https://horadoqa.github.io/testes-login/login/'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-07T08:26:36.910967" elapsed="0.903909"/>
+<status status="PASS" start="2025-02-07T09:10:42.017160" elapsed="0.884021"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-07T08:26:42.815427" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-07T09:10:47.902589" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-07T08:26:37.815140" elapsed="5.000427"/>
+<status status="PASS" start="2025-02-07T09:10:42.901467" elapsed="5.002165"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-07T08:26:42.815785" elapsed="0.002284"/>
+<status status="PASS" start="2025-02-07T09:10:47.905599" elapsed="0.008858"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:36.910387" elapsed="5.907834"/>
+<status status="PASS" start="2025-02-07T09:10:42.016880" elapsed="5.898046"/>
 </kw>
 <kw name="Input Email And Password Invalid">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:42.819407" level="INFO">Typing text 'invalido@dominio.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2025-02-07T09:10:47.917785" level="INFO">Typing text 'invalido@dominio.com' into text field '//*[@id="username"]'.</msg>
 <arg>${USERNAME_ID}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:42.819098" elapsed="0.119441"/>
+<status status="PASS" start="2025-02-07T09:10:47.917044" elapsed="0.131270"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:42.939064" level="INFO">Typing text 'SenhaErrada123' into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-07T09:10:48.048814" level="INFO">Typing text 'SenhaErrada123' into text field '//*[@id="password"]'.</msg>
 <arg>${PASSWPRD_ID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:42.938769" elapsed="0.121058"/>
+<status status="PASS" start="2025-02-07T09:10:48.048527" elapsed="0.114111"/>
 </kw>
 <arg>${INVALID_EMAIL}</arg>
 <arg>${INVALID_PASSWORD}</arg>
-<status status="PASS" start="2025-02-07T08:26:42.818598" elapsed="0.241374"/>
+<status status="PASS" start="2025-02-07T09:10:47.915853" elapsed="0.246941"/>
 </kw>
 <kw name="Click Login Button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-07T08:26:43.060830" level="INFO">Clicking element 'id=login-button'.</msg>
+<msg time="2025-02-07T09:10:48.163669" level="INFO">Clicking element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-07T08:26:43.060640" elapsed="0.094973"/>
+<status status="PASS" start="2025-02-07T09:10:48.163460" elapsed="0.086873"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:26:43.060336" elapsed="0.095494"/>
+<status status="PASS" start="2025-02-07T09:10:48.163138" elapsed="0.087373"/>
 </kw>
 <kw name="Wait Until Error Message Is Visible">
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>//*[@id="error-message"]</arg>
 <arg>${message}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-02-07T08:26:43.156666" elapsed="0.032685"/>
+<status status="PASS" start="2025-02-07T09:10:48.251455" elapsed="0.030877"/>
 </kw>
 <arg>${EMAIL_PASSWORD_INVALID}</arg>
-<status status="PASS" start="2025-02-07T08:26:43.156215" elapsed="0.034232"/>
+<status status="PASS" start="2025-02-07T09:10:48.250828" elapsed="0.031714"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:43.191592" elapsed="0.062059"/>
+<status status="PASS" start="2025-02-07T09:10:48.282996" elapsed="0.062247"/>
 </kw>
 <doc>Verifica se as mensagens de erro são claras.</doc>
 <tag>10</tag>
-<status status="PASS" start="2025-02-07T08:26:36.909197" elapsed="6.344945"/>
+<status status="PASS" start="2025-02-07T09:10:42.016409" elapsed="6.329055"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-07T08:26:43.255322" elapsed="0.000280"/>
+<status status="PASS" start="2025-02-07T09:10:48.346610" elapsed="0.000277"/>
 </kw>
-<status status="PASS" start="2025-02-07T08:25:21.190203" elapsed="82.065476"/>
+<status status="PASS" start="2025-02-07T09:09:30.741781" elapsed="77.605195"/>
 </suite>
 <statistics>
 <total>

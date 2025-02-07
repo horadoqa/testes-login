@@ -22,6 +22,7 @@ Open Browser To Login Page
     Open Browser    ${URL}    Chrome
     Sleep    5s
     # Maximize Browser Window
+    # Maximize Browser Window
     Set Selenium Implicit Wait    5s
     
 # Ação de preencher email e senha válidos
@@ -74,7 +75,6 @@ Caso de Teste 1: Acesso à página de login
     Page Should Contain Element    id=password
     Page Should Contain Element    id=login-button
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 2: Login com credenciais válidas
     [Documentation]    Testa o login com credenciais válidas.
@@ -94,7 +94,7 @@ Caso de Teste 3: Login com credenciais inválidas
     Verify Message Error
     [Teardown]    Close Browser
 
-Caso de Teste 4: Campo de "usuário" vazio
+Caso de Teste 4: Campo de "E-mail" vazio
     [Documentation]    Verifica se o sistema impede o envio com o campo de "usuário" vazio.
     [Tags]    4
     Open Browser To Login Page
@@ -112,7 +112,6 @@ Caso de Teste 5: Campo de "senha" vazio
     Wait Until Error Message Is Visible    ${EMAIL_PASSWORD_MANDATORY}
     [Teardown]    Close Browser
 
-
 Caso de Teste 6: Campos de login com espaços em branco
     [Documentation]    Verifica se o sistema lida corretamente com espaços em branco nos campos.
     [Tags]    6
@@ -121,7 +120,6 @@ Caso de Teste 6: Campos de login com espaços em branco
     Click Login Button
     Verify Redirect
     [Teardown]    Close Browser
-
 
 Caso de Teste 7: Exibição de senha
     [Documentation]    Verifica a funcionalidade de "exibir senha".
