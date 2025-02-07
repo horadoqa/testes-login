@@ -4,7 +4,7 @@ Suite Setup    Open Browser To Login Page
 Suite Teardown    Close Browser
 
 *** Variables ***
-${URL}    http://127.0.0.1:5500/login/index.html  # Substitua pelo URL correto da sua aplicação
+${URL}    https://horadoqa.github.io/testes-login/login/
 ${USERNAME_ID}    //*[@id="username"]
 ${PASSWPRD_ID}    //*[@id="password"]
 ${VALID_EMAIL}    usuario@example.com
@@ -46,6 +46,11 @@ Input Email And Password Invalid Space
 Click Login Button
     Click Element    id=login-button
 
+Verify Message Error
+    Wait Until Element Is Visible    ${ERROR_MESSAGE}    10s
+    ${ERROR_MESSAGE}=    Get Text    ${ERROR_MESSAGE}
+    Should Contain    ${ERROR_MESSAGE}    ${EMAIL_PASSWORD_INVALID}
+
 # Ação para verificar se o botão está desabilitado
 Verify Login Button Disabled
     ${attribute}=    Get Element Attribute    id=login-button    disabled
@@ -79,22 +84,15 @@ Caso de Teste 2: Login com credenciais válidas
     Click Login Button
     Verify Redirect
     [Teardown]    Close Browser
-    Sleep    5s
 
-*** Test Cases ***
-Login com credenciais inválidas
+Caso de Teste 3: Login com credenciais inválidas
     [Documentation]    Testa o login com credenciais inválidas.
     [Tags]    3
     Open Browser To Login Page
     Input Email And Password Invalid    ${INVALID_EMAIL}    ${INVALID_PASSWORD}
-    Sleep    5s
     Click Login Button
-    Sleep    5s
-    Wait Until Element Is Visible    ${ERROR_MESSAGE}    10s
-    ${ERROR_MESSAGE}=    Get Text    ${ERROR_MESSAGE}
-    Should Contain    ${ERROR_MESSAGE}    ${EMAIL_PASSWORD_INVALID}
+    Verify Message Error
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 4: Campo de "usuário" vazio
     [Documentation]    Verifica se o sistema impede o envio com o campo de "usuário" vazio.
@@ -104,7 +102,6 @@ Caso de Teste 4: Campo de "usuário" vazio
     Click Login Button
     Wait Until Error Message Is Visible    ${EMAIL_PASSWORD_MANDATORY}
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 5: Campo de "senha" vazio
     [Documentation]    Verifica se o sistema impede o envio com o campo de "senha" vazio.
@@ -114,7 +111,7 @@ Caso de Teste 5: Campo de "senha" vazio
     Click Login Button
     Wait Until Error Message Is Visible    ${EMAIL_PASSWORD_MANDATORY}
     [Teardown]    Close Browser
-    Sleep    5s
+
 
 Caso de Teste 6: Campos de login com espaços em branco
     [Documentation]    Verifica se o sistema lida corretamente com espaços em branco nos campos.
@@ -124,7 +121,7 @@ Caso de Teste 6: Campos de login com espaços em branco
     Click Login Button
     Verify Redirect
     [Teardown]    Close Browser
-    Sleep    5s
+
 
 Caso de Teste 7: Exibição de senha
     [Documentation]    Verifica a funcionalidade de "exibir senha".
@@ -140,7 +137,6 @@ Caso de Teste 7: Exibição de senha
     Click Login Button
     Verify Redirect
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 8: Redirecionamento após login
     [Documentation]    Verifica se o sistema redireciona corretamente após o login.
@@ -151,7 +147,6 @@ Caso de Teste 8: Redirecionamento após login
     Sleep    1
     Verify Redirect
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 9: Comportamento do botão "entrar"
     [Documentation]    Verifica se o botão "entrar" fica desabilitado com campos vazios.
@@ -159,7 +154,6 @@ Caso de Teste 9: Comportamento do botão "entrar"
     Open Browser To Login Page
     Verify Login Button Disabled
     [Teardown]    Close Browser
-    Sleep    5s
 
 Caso de Teste 10: Mensagens de erro
     [Documentation]    Verifica se as mensagens de erro são claras.
@@ -169,4 +163,6 @@ Caso de Teste 10: Mensagens de erro
     Click Login Button
     Wait Until Error Message Is Visible    ${EMAIL_PASSWORD_INVALID}
     [Teardown]    Close Browser
-    Sleep    5s
+
+
+# robot --output results/output.xml --log results/log.html --report results/report.html login.robot
