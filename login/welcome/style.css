@@ -74,17 +74,22 @@ p {
     font-size: 20px;
 }
 
-.youtube-button {
-    display: inline-block; /* Para que o link se comporte como um botão */
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: #ff0000; /* Cor de fundo do botão (vermelho do YouTube) */
-    color: white; /* Cor do texto */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: center; /* Centraliza o texto */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: background-color 0.3s; /* Transição suave para o hover */
+.fa-youtube {
+    color: #cc0000; /* Cor mais escura ao passar o mouse */
 }
 
-.youtube-button:hover {
-    background-color: #cc0000; /* Cor mais escura ao passar o mouse */
+.fa-github {
+    color: #fbfbfb; /* Cor mais escura ao passar o mouse */
+}
+
+.icons-social i {
+	font-size: 6em;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.icons-social a {
+  text-decoration: none;
 }
