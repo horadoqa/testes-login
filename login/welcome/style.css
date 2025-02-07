@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* Estilo do Menu Fixo */
 .menu {
     background-color: #333; /* Fundo do menu */
@@ -65,16 +66,13 @@ body {
 }
 
 /* Efeitos e Estilo Halloween */
-h1, h2 {
-    font-family: 'Creepster', cursive; /* Fonte temática de Halloween */
+h1, h2, h3, h4, h5, h6 {
     color: #4CAF50; /* Laranja Halloween */
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 .youtube-button {
     display: inline-block; /* Para que o link se comporte como um botão */
